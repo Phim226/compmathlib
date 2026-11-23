@@ -28,7 +28,7 @@ Solution bisection(
         return result;
 
     /* This check only guarantees that there isn't an even number of roots in the interval.
-    *  If f(a)*f(b) < 0.0 then this only guarantees that a odd number of roots are present,
+    *  If f(a)*f(b) < 0.0 then this only guarantees that an odd number of roots are present,
     *  so care needs to be taken about the interval to avoid unwanted behaviour.
     */
     } else if (f(a)*f(b) > 0.0) {
