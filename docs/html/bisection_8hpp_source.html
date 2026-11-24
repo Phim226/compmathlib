@@ -82,20 +82,29 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">bisection.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="bisection_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="solution_8hpp.html">find_root/detail/solution.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="bisection_8hpp.html#a658d42b057a9b6dca8f584934d9da585">    5</a></span><span class="keyword">using </span><a class="code hl_typedef" href="bisection_8hpp.html#a658d42b057a9b6dca8f584934d9da585">Interval</a> = std::array&lt;double, 2&gt;;</div>
+<a href="bisection_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="solution_8hpp.html">find_root/detail/solution.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="bisection_8hpp.html#af3553f23487561a54d9ec18dd2b9c718">   17</a></span><a class="code hl_struct" href="structSolution.html">Solution</a> <a class="code hl_function" href="bisection_8hpp.html#af3553f23487561a54d9ec18dd2b9c718">bisection</a>(</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; f,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_typedef" href="bisection_8hpp.html#a658d42b057a9b6dca8f584934d9da585">Interval</a> init_int,</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">double</span> abs_err,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::optional&lt;int&gt; max_iter = std::nullopt</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>);</div>
-<div class="ttc" id="abisection_8hpp_html_a658d42b057a9b6dca8f584934d9da585"><div class="ttname"><a href="bisection_8hpp.html#a658d42b057a9b6dca8f584934d9da585">Interval</a></div><div class="ttdeci">std::array&lt; double, 2 &gt; Interval</div><div class="ttdef"><b>Definition</b> bisection.hpp:5</div></div>
-<div class="ttc" id="abisection_8hpp_html_af3553f23487561a54d9ec18dd2b9c718"><div class="ttname"><a href="bisection_8hpp.html#af3553f23487561a54d9ec18dd2b9c718">bisection</a></div><div class="ttdeci">Solution bisection(std::function&lt; double(double)&gt; f, Interval init_int, double abs_err, std::optional&lt; int &gt; max_iter=std::nullopt)</div><div class="ttdoc">Finds roots of continuous functions using the bisection method. Care should be taken to ensure that t...</div></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespacecompmathlib.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecompmathlib.html">compmathlib</a>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespacecompmathlib.html#aaf1b538a5e2eba9fd0da07a38a2d7ecb">    9</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacecompmathlib.html#aaf1b538a5e2eba9fd0da07a38a2d7ecb">Interval</a> = std::array&lt;double, 2&gt;;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespacecompmathlib.html#a885a0c32291cf01d6b84d6579a32b2e7">   21</a></span><a class="code hl_struct" href="structSolution.html">Solution</a> <a class="code hl_function" href="namespacecompmathlib.html#a885a0c32291cf01d6b84d6579a32b2e7">bisection</a>(</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; f,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_typedef" href="namespacecompmathlib.html#aaf1b538a5e2eba9fd0da07a38a2d7ecb">Interval</a> init_int,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">double</span> abs_err,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::optional&lt;int&gt; max_iter = std::nullopt</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+</div>
+<div class="ttc" id="anamespacecompmathlib_html"><div class="ttname"><a href="namespacecompmathlib.html">compmathlib</a></div><div class="ttdef"><b>Definition</b> bisection.hpp:7</div></div>
+<div class="ttc" id="anamespacecompmathlib_html_a885a0c32291cf01d6b84d6579a32b2e7"><div class="ttname"><a href="namespacecompmathlib.html#a885a0c32291cf01d6b84d6579a32b2e7">compmathlib::bisection</a></div><div class="ttdeci">Solution bisection(std::function&lt; double(double)&gt; f, Interval init_int, double abs_err, std::optional&lt; int &gt; max_iter=std::nullopt)</div><div class="ttdoc">Finds roots of continuous functions using the bisection method. Care should be taken to ensure that t...</div></div>
+<div class="ttc" id="anamespacecompmathlib_html_aaf1b538a5e2eba9fd0da07a38a2d7ecb"><div class="ttname"><a href="namespacecompmathlib.html#aaf1b538a5e2eba9fd0da07a38a2d7ecb">compmathlib::Interval</a></div><div class="ttdeci">std::array&lt; double, 2 &gt; Interval</div><div class="ttdef"><b>Definition</b> bisection.hpp:9</div></div>
 <div class="ttc" id="asolution_8hpp_html"><div class="ttname"><a href="solution_8hpp.html">solution.hpp</a></div></div>
 <div class="ttc" id="astructSolution_html"><div class="ttname"><a href="structSolution.html">Solution</a></div><div class="ttdoc">Struct containing information about the result of an iterative numerical method.</div><div class="ttdef"><b>Definition</b> solution.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->

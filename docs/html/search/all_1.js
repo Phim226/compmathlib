@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['interval_0',['Interval',['../bisection_8hpp.html#a658d42b057a9b6dca8f584934d9da585',1,'bisection.hpp']]],
-  ['iters_1',['iters',['../structSolution.html#acb902b1c00542002f87c510e5830857d',1,'Solution']]]
+  ['cols_0',['cols',['../structcompmathlib_1_1MatrixSize.html#a531684034b7c200d52e51871b14190e2',1,'compmathlib::MatrixSize']]],
+  ['compmathlib_1',['compmathlib',['../namespacecompmathlib.html',1,'']]],
+  ['constant_2',['constant',['../classcompmathlib_1_1Matrix.html#a1a778db144f49fb8d783a5e19a7460de',1,'compmathlib::Matrix']]]
 ];

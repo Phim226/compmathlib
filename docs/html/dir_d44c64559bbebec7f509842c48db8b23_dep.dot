@@ -9,5 +9,6 @@ digraph "include"
     graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_d44c64559bbebec7f509842c48db8b23.html",tooltip=""]
     dir_d44c64559bbebec7f509842c48db8b23 [shape=plaintext, label="include"];
   dir_cfb872383798eaa7ba6ea188e8a3a747 [label="find_root", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_cfb872383798eaa7ba6ea188e8a3a747.html",tooltip=""];
+  dir_de30b7769ea9b0174b2bf9bd9f0b8547 [label="lin_alg", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_de30b7769ea9b0174b2bf9bd9f0b8547.html",tooltip=""];
   }
 }
