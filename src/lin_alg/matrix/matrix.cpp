@@ -1,5 +1,6 @@
 #include "lin_alg/matrix/matrix.hpp"
 #include <stdexcept>
+#include <iostream>
 
 namespace compmathlib{
 
@@ -90,6 +91,17 @@ Matrix matmul(Matrix A, Matrix B){
     Matrix C = Matrix::zeros(a_row, b_col);
 
     return C;
+}
+
+void print_matrix(Matrix A) {
+    size_t rows = A.size().rows;
+
+    for (int i = 0 ; i < rows ; i++) {
+        for (double v : A[i]) {
+            std::cout << v << " ";
+        }
+        std::cout << std::endl;
+    }
 }
 
 }
