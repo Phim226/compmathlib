@@ -95,7 +95,7 @@ class Matrix {
  * @exception std::invalid_argument if the number of columns of A does not equal to number of
  *            columns of B
  */
-Matrix matmul(const Matrix A, const Matrix B);
+Matrix matmul(Matrix A, Matrix B);
 
 /**
  * @brief Prints entries of a matrix in a simple grid.
