@@ -2,6 +2,7 @@
 #include <iostream>
 
 int main() {
+    // Initialise some basic matrices
     compmathlib::Matrix zeros = compmathlib::Matrix::zeros(4, 3);
     compmathlib::print_matrix(zeros);
 
