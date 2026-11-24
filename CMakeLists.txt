@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(compmathlib
     src/find_root/bisection.cpp
+    src/lin_alg/matrix/matrix.cpp
 )
 
 target_include_directories(compmathlib
