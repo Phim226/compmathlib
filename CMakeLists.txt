@@ -8,25 +8,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(compmathlib
-    src/find_root/bisection.cpp
-    src/lin_alg/matrix/matrix.cpp
-)
-
-target_include_directories(compmathlib
-    PUBLIC
-        ${PROJECT_SOURCE_DIR}/include
-)
-
-# Bisection example executable
-add_executable(bisection_example
-    examples/cpp/find_root/bisection.cpp
-)
-
-set_target_properties(bisection_example PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/find_root"
-)
-
-target_link_libraries(bisection_example
-    PRIVATE compmathlib
-)
+add_subdirectory(src)
+add_subdirectory(examples)
