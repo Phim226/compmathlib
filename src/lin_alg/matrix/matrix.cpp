@@ -58,6 +58,17 @@ const std::vector<double>& Matrix::operator[](std::size_t i) const {
     return data.at(i);
 }
 
+std::vector<double> Matrix::col(std::size_t j) {
+    size_t rows = this->matrix_size.rows;
+
+    std::vector<double> column(rows, 0);
+    for (int i = 0; i < rows ; i++) {
+        column[i] = data[i][j];
+    }
+
+    return column;
+}
+
 double dot(const std::vector<double> v, const std::vector<double> w){
     int v_size = v.size();
     // Check vectors are the same length

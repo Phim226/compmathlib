@@ -83,6 +83,14 @@ class Matrix {
          * @return const std::vector<double>&
          */
         const std::vector<double>& operator[](std::size_t i) const;
+
+        /**
+         * @brief Returns the j-th column as a vector.
+         *
+         * @param j Column index
+         * @return std::vector<double>
+         */
+        std::vector<double> col(std::size_t j);
 };
 
 /**
