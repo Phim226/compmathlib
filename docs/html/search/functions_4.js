@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size_0',['size',['../classcompmathlib_1_1Matrix.html#a7dbb13bfff87bf26d13669f5fe2af578',1,'compmathlib::Matrix']]]
+  ['print_5fmatrix_0',['print_matrix',['../namespacecompmathlib.html#ae7e4d8107a84865ada3e8fd454c18fcb',1,'compmathlib']]]
 ];
