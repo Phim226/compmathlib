@@ -59,6 +59,13 @@ const std::vector<double>& Matrix::operator[](std::size_t i) const {
 }
 
 std::vector<double> Matrix::col(std::size_t j) {
+    size_t cols = this->matrix_size.cols;
+    if (j > cols) {
+        throw std::out_of_range(
+            "Column index out of bounds"
+        );
+    }
+
     size_t rows = this->matrix_size.rows;
 
     std::vector<double> column(rows, 0);
