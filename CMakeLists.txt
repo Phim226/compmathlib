@@ -20,7 +20,7 @@ target_include_directories(compmathlib
 
 # Bisection example executable
 add_executable(bisection_example
-    examples/cpp/bisection.cpp
+    examples/cpp/find_root/bisection.cpp
 )
 
 target_link_libraries(bisection_example
