@@ -1,3 +1,5 @@
+#pragma once
+
 #include "find_root/detail/solution.hpp"
 #include <optional>
 #include <functional>
