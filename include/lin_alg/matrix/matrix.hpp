@@ -97,4 +97,11 @@ class Matrix {
  */
 Matrix matmul(const Matrix A, const Matrix B);
 
+/**
+ * @brief Prints entries of a matrix in a simple grid.
+ *
+ * @param A Matrix
+ */
+void print_matrix(const Matrix A);
+
 }
