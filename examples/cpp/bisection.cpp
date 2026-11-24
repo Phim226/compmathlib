@@ -7,7 +7,7 @@ double f(double x) {
 }
 
 int main() {
-    Solution sol = bisection(f, {0.8, 1.13}, 0.001);
+    Solution sol = compmathlib::bisection(f, {0.8, 1.13}, 0.001);
 
     printf("root at %f\n", sol.root);
     return 0;

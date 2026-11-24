@@ -3,6 +3,7 @@
 #include <array>
 #include "find_root/bisection.hpp"
 
+namespace compmathlib{
 
 Solution bisection(
     std::function<double(double)> f,
@@ -69,4 +70,6 @@ Solution bisection(
     result.root_found = true;
 
     return result;
+}
+
 }

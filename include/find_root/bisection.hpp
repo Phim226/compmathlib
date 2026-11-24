@@ -4,6 +4,8 @@
 #include <optional>
 #include <functional>
 
+namespace compmathlib{
+
 using Interval = std::array<double, 2>;
 
 /**
@@ -22,3 +24,5 @@ Solution bisection(
     double abs_err,
     std::optional<int> max_iter = std::nullopt
 );
+
+}
